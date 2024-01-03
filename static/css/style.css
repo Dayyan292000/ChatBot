@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.fullscreen-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Send the background behind other elements */
+}
+
+.chatbot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for better readability */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 150px;
+    position: relative; /* To ensure the content is positioned relative to the chat container */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.chat-messages {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 400px; /* Set the desired height */
+    overflow-y: scroll; /* Enable scrolling */
+}
+
+.message-input {
+    width: 80%;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-button {
+    padding: 8px;
+    background-color: #1f5de4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message {
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+    background-color: #bdf7e7; /* Background color for the message content */
+    /* move to the right  */
+    clear: both;
+}
+
+.user-message {
+    float: right;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.user-message strong {
+    background-color: #bdf7e7; /* Background color for the message content */
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 5px; /* Add some space between the name and the message content */
+}
+
+.bot-message {
+    background-color: #819ff7;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+}

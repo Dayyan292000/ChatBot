@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Flask Chatbot</title>
+</head>
+<body>
+    <div class="fullscreen-background">
+        <img src="{{ url_for('static', filename='assets/bahrai.jpg') }}" alt="Chatbot" class="chatbot">
+    </div>
+
+    <div class="chat-container">
+        <h1>Chat with Bahria University</h1>
+        <div id="chat-messages" class="chat-messages"></div>
+        <form id="chat-form">
+            <input type="text" id="user-message" class="message-input" placeholder="Type your message...">
+            <button type="button" onclick="sendMessage()" class="send-button">Send</button>
+        </form>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var userMessage = document.getElementById("user-message").value;
+            document.getElementById("user-message").value = "";
+            
+            var chatContainer = document.getElementById("chat-messages");
+            chatContainer.innerHTML += `
+                <p class="message user-message">
+                 ${userMessage}
+                </p>`;
+            
+            fetch("/get_response", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: "user_message=" + encodeURIComponent(userMessage),
+            })
+            .then(response => response.json())
+            .then(data => {
+                var botResponse = data.bot_response;
+                chatContainer.innerHTML += `
+                    <p class="message bot-message">
+                        <strong>Bahria University:</strong> ${botResponse}
+                    </p>`;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>

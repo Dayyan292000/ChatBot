@@ -1,0 +1,45 @@
+Hi
+I am Bahria Assistant. How can I help you today?
+
+Hello
+Welcome to Bahria University's chat. Ask me anything!
+
+How are you?
+I'm just a computer program, but I'm here and ready to assist you.
+
+What's up?
+Not much, just here to answer your questions about Bahria University.
+
+Good morning
+Good morning! How can I assist you today?
+
+Good afternoon
+Good afternoon! Feel free to ask me anything about Bahria University.
+
+Good evening
+Good evening! How may I help you with information about Bahria University?
+
+
+What is Bahria University?
+Bahria University is a multi-campus institution offering programs in various disciplines.
+
+Where is the main campus located?
+The main campus of Bahria University is located in Islamabad, Pakistan.
+
+What programs does Bahria University offer?
+Bahria University offers undergraduate and postgraduate programs in engineering, computer science, business, social sciences, and more.
+
+How can I apply for admission?
+To apply for admission, you can visit the official Bahria University website and follow the admission process outlined there.
+
+Tell me about the faculty at Bahria University.
+The faculty at Bahria University consists of experienced and qualified professors who excel in their respective fields.
+
+What are the contact details for Bahria University?
+You can find the contact details for Bahria University on the official website or contact the admissions office for specific inquiries.
+
+What facilities are available on campus?
+Bahria University provides various facilities on campus, including libraries, laboratories, sports facilities, and student support services.
+
+Can I get a scholarship?
+Bahria University offers scholarships to eligible students. You can check the scholarship section on the official website for details on eligibility and application procedures.
